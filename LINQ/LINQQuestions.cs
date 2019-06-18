@@ -18,10 +18,9 @@ namespace LINQ
         //Contains returns true or false. It indicates whether the IEnumerable collection has an element matching the argument.It acts upon any IEnumerable collection when the System.Linq namespace is included.
        
 
-               public List<string> ReturnSubstringFromList(List<string> list)
+        public List<string> ReturnSubstringFromList(List<string> list)
         {
             List<string> thList = list.Where(t => t.Contains("th")).ToList();
-
             return thList;
         }
 
