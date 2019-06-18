@@ -18,6 +18,8 @@ namespace LINQ
             List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
             List<string> NameList = list.GetNameList(names);
 
+            list.GetCalculatesClassGradeAverage();
+
 
             Console.ReadLine();
 
