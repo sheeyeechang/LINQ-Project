@@ -14,20 +14,24 @@ namespace LINQ
         //method (CAN DO)
         //1. Using LINQ, write a function that returns all words that contain the substring “th” from a list.
         //List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", “mathematics” };
-
-        //Contains returns true or false. It indicates whether the IEnumerable collection has an element matching the argument.It acts upon any IEnumerable collection when the System.Linq namespace is included.
-       
-
+        //Contains returns true or false. It indicates whether the IEnumerable collection has an element matching the argument.It acts upon any IEnumerable collection when the System.Linq namespace is included.   
         public List<string> ReturnSubstringFromList(List<string> list)
         {
             List<string> thList = list.Where(t => t.Contains("th")).ToList();
             return thList;
         }
 
+        //2. Using LINQ, write a function that takes in a list of strings and returns a copy of the list without duplicates.
+        public List<string> GetNameList(List<string> list)
+        {
+
+            List<string> nameList = list.Distinct().ToList();
+            return nameList;
+        }
 
 
-        
-        
+
+
 
     }
 }
