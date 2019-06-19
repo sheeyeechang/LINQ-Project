@@ -55,7 +55,22 @@ namespace LINQ
             Console.WriteLine(averageTheAverage);
         }
 
+        // 4. Write a function that takes in a string of letters(i.e. “Terrill”) and returns an alphabetically ordered 
+        // string corresponding to the letter frequency(i.e. "E1I1L2R2T1")
 
+        public void GetStringOfLetters()
+        {
+            string input = "Terrill";
+            var result1 = input.ToUpper().ToArray().OrderBy(x => x);        //To Arry, OrderBy
+            var result2 = result1.GroupBy(x => x).Select(x => $"{x.Last()}{x.Count()}");                //GroupBy and Count
+            string result = "";
+            foreach (var item in result2)
+            {
+                result += item.ToString();
+            }
 
+            Console.WriteLine(result);
+            Console.ReadLine();
+        }
     }
 }

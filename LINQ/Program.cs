@@ -20,6 +20,7 @@ namespace LINQ
 
             list.GetCalculatesClassGradeAverage();
 
+            list.GetStringOfLetters();
 
             Console.ReadLine();
 
